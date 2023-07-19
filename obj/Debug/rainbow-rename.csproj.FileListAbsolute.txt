@@ -1,0 +1,11 @@
+C:\Users\flore\OneDrive\Desktop\rainbow-rename\bin\Debug\rainbow-rename.exe.config
+C:\Users\flore\OneDrive\Desktop\rainbow-rename\bin\Debug\rainbow-rename.exe
+C:\Users\flore\OneDrive\Desktop\rainbow-rename\bin\Debug\rainbow-rename.pdb
+C:\Users\flore\OneDrive\Desktop\rainbow-rename\obj\Debug\rainbow-rename.csproj.AssemblyReference.cache
+C:\Users\flore\OneDrive\Desktop\rainbow-rename\obj\Debug\rainbow-rename.csproj.SuggestedBindingRedirects.cache
+C:\Users\flore\OneDrive\Desktop\rainbow-rename\obj\Debug\rainbow_rename.Main.resources
+C:\Users\flore\OneDrive\Desktop\rainbow-rename\obj\Debug\rainbow_rename.Properties.Resources.resources
+C:\Users\flore\OneDrive\Desktop\rainbow-rename\obj\Debug\rainbow-rename.csproj.GenerateResource.cache
+C:\Users\flore\OneDrive\Desktop\rainbow-rename\obj\Debug\rainbow-rename.csproj.CoreCompileInputs.cache
+C:\Users\flore\OneDrive\Desktop\rainbow-rename\obj\Debug\rainbow-rename.exe
+C:\Users\flore\OneDrive\Desktop\rainbow-rename\obj\Debug\rainbow-rename.pdb
