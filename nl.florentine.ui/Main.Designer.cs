@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace rainbow_rename
+namespace nl.florentine.ui
 {
     partial class Main
     {

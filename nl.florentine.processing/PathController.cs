@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms.VisualStyles;
 
-namespace rainbow_rename
+namespace nl.florentine.processing
 {
     internal class PathController {
         public List<String> seperatePath(string path)

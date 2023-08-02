@@ -11,7 +11,11 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace rainbow_rename
+using nl.florentine.processing.FileManager;
+using nl.florentine.processing.FileNotFoundException;
+using nl.florentine.processing.PathController;
+
+namespace nl.florentine.ui
 {
     public partial class Main : Form
     {

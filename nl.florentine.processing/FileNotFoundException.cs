@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rainbow_rename
+namespace nl.florentine.processing
 {
     [Serializable]
     internal class FileNotFoundException : Exception
