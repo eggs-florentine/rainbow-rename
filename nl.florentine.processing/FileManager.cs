@@ -12,7 +12,14 @@ namespace nl.florentine.processing
 {
     internal class FileManager
     {
-        public dynamic processFile(string sourcePath, string destPath, string ext) {
+
+        public string testFCreated;
+        public string testFPath;
+
+        public string testDPath;
+        public string testDCreated;
+
+        public dynamic processFile(string sourcePath, string destPath, string ext, bool testUse = false) {
 
 
             try
@@ -22,6 +29,25 @@ namespace nl.florentine.processing
                 Console.WriteLine("ad directory: " + adDirectory);
                 // INSTANCE: app dir
                 var directory = "";
+
+                // CREATE: file for test purposes
+                if (testUse && !testFCreated) {
+                    File.Create(adDirectory + '\\' + "rmbwrnm.txt").Dispose();
+                    testFCreated = true;
+                }
+
+                if (testUse && testFCreated) {
+                    File.Create(adDirectory + '\\' + "rainbow-rename.txt").Dispose();
+                    File.Delete(adDirectory + '\\' + "rmbwrnm.txt").Dispose();
+
+                    if (!File.Exists(adDirectory + '\\' + "rmbwrnm.txt") && File.Exists(adDirectory + '\\' + "rainbow-rename.txt")) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+                    
+                }
 
                 if (Directory.Exists(adDirectory))
                 { 
@@ -72,7 +98,7 @@ namespace nl.florentine.processing
                     InternalException toThrow = new InternalException("The program aborted due to the renaming process not working. | InternalException FileManager.cs line 51");
                 }
                 
-            }
+            } 
             catch (IOException) { 
                 if (!File.Exists(sourcePath))
                 {
@@ -83,8 +109,9 @@ namespace nl.florentine.processing
             }
             return true;
         }
+}
 
-        public ArrayList indexFolder(string path) {
+        public ArrayList indexFolder(string path, bool testUse = false) {
             ArrayList index = new ArrayList();
 
             foreach (string file in Directory.GetFiles(path)) {
