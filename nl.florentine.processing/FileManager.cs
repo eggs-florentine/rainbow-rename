@@ -20,8 +20,6 @@ namespace nl.florentine.processing
         public string testDCreated;
 
         public dynamic processFile(string sourcePath, string destPath, string ext, bool testUse = false) {
-
-
             try
             {
                 // INSTANCE: app data dir
@@ -45,8 +43,6 @@ namespace nl.florentine.processing
                     } else {
                         return false;
                     }
-                }
-                    
                 }
 
                 if (Directory.Exists(adDirectory))
@@ -98,18 +94,16 @@ namespace nl.florentine.processing
                     InternalException toThrow = new InternalException("The program aborted due to the renaming process not working. | InternalException FileManager.cs line 51");
                 }
                 
-            } 
-            catch (IOException) { 
+            } catch (IOException) { 
                 if (!File.Exists(sourcePath))
                 {
                     // CATCH: file provided does not exist
-                    FileNotFoundException toThrow = new FileNotFoundException("The program was unable to find any file meeting your requirements to rename. Have you chosen the right file extension?");
+                    public FileNotFoundException toThrow = new FileNotFoundException("The program was unable to find any file meeting your requirements to rename. Have you chosen the right file extension?");
                     return toThrow;
                 }
             }
             return true;
         }
-}
 
         public ArrayList indexFolder(string path, bool testUse = false) {
             ArrayList index = new ArrayList();
