@@ -96,7 +96,7 @@ namespace nl.florentine.processing
                 
             } catch (IOException) { 
                 if (!File.Exists(sourcePath))
-                {
+                } {
                     // CATCH: file provided does not exist
                     public FileNotFoundException toThrow = new FileNotFoundException("The program was unable to find any file meeting your requirements to rename. Have you chosen the right file extension?");
                     return toThrow;
