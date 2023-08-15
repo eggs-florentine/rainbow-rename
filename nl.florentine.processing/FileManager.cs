@@ -13,11 +13,15 @@ namespace nl.florentine.processing
     public class FileManager
     {
 
+        public FileManager() {
         public string testFCreated;
         public string testFPath;
 
         public string testDPath;
         public string testDCreated;
+        }
+
+        
 
         public dynamic processFile(string sourcePath, string destPath, string ext, bool testUse = false) {
             try
@@ -101,8 +105,9 @@ namespace nl.florentine.processing
                     public FileNotFoundException toThrow = new FileNotFoundException("The program was unable to find any file meeting your requirements to rename. Have you chosen the right file extension?");
                     return toThrow;
                 }
+                return true;
             }
-            return true;
+            
         }
 
         public static ArrayList indexFolder(string path, bool testUse = false) {
