@@ -6,9 +6,9 @@ namespace nl.florentine.tests {
         [Fact]
         public void ProcessNameTest() {
             if ("ababababa".Contains("a")) {
-                Assert.True(true, 'Identified character');
+                Assert.True(true, "Identified character");
             } else if ("ababababa".Contains("a") == false) {
-                Assert.False(false, 'Failed to identify character');
+                Assert.False(false, "Failed to identify character");
             }
         }
     }
