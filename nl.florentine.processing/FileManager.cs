@@ -10,7 +10,7 @@ using System.Windows.Forms.VisualStyles;
 
 namespace nl.florentine.processing
 {
-    internal class FileManager
+    public class FileManager
     {
 
         public string testFCreated;
@@ -105,7 +105,7 @@ namespace nl.florentine.processing
             return true;
         }
 
-        public ArrayList indexFolder(string path, bool testUse = false) {
+        public static ArrayList indexFolder(string path, bool testUse = false) {
             ArrayList index = new ArrayList();
 
             foreach (string file in Directory.GetFiles(path)) {
@@ -115,7 +115,7 @@ namespace nl.florentine.processing
             return index;
         }
 
-        public ArrayList queryIndex(ArrayList index, string query)
+        public static ArrayList queryIndex(ArrayList index, string query)
         {
             ArrayList result = new ArrayList();
 
