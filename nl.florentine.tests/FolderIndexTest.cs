@@ -19,7 +19,7 @@ namespace nl.florentine.tests {
             if (manager.queryIndex(manager.indexFolder(adDirectory), "b") == expectation) {
                 Assert.True(true, "Folder successfully indexed");
             } else if (manager.queryIndex(manager.indexFolder(adDirectory), "b") != expectation) {
-                Assert.False(false, "Folder unable to be indexed")
+                Assert.False(false, "Folder unable to be indexed");
             }
 
         }
