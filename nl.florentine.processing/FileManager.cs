@@ -8,17 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms.VisualStyles;
 
-namespace nl.florentine.processing
-{
+namespace nl.florentine.processing;
     public class FileManager
     {
 
         public FileManager() {
-        public string testFCreated;
-        public string testFPath;
+            public string testFCreated;
+            public string testFPath;
 
-        public string testDPath;
-        public string testDCreated;
+            public string testDPath;
+            public string testDCreated;
         }
 
         
@@ -99,15 +98,12 @@ namespace nl.florentine.processing
                 }
                 
             } catch (IOException) { 
-                if (!File.Exists(sourcePath))
-                } {
+                if (!File.Exists(sourcePath)) {
                     // CATCH: file provided does not exist
                     public FileNotFoundException toThrow = new FileNotFoundException("The program was unable to find any file meeting your requirements to rename. Have you chosen the right file extension?");
-                    return toThrow;
-                }
+                    return toThrow; }
                 return true;
             }
-            
         }
 
         public static ArrayList indexFolder(string path, bool testUse = false) {
@@ -135,4 +131,3 @@ namespace nl.florentine.processing
             return result;
         }
     }
-}
