@@ -9,8 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms.VisualStyles;
 
 namespace nl.florentine.processing;
-    public class FileManager
-    {
+    public class FileManager {
 
         public FileManager() {
             public string testFCreated;
@@ -19,12 +18,9 @@ namespace nl.florentine.processing;
             public string testDPath;
             public string testDCreated;
         }
-
         
-
         public dynamic processFile(string sourcePath, string destPath, string ext, bool testUse = false) {
-            try
-            {
+            try {
                 // INSTANCE: app data dir
                 var adDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
                 Console.WriteLine("ad directory: " + adDirectory);
@@ -101,12 +97,13 @@ namespace nl.florentine.processing;
                 if (!File.Exists(sourcePath)) {
                     // CATCH: file provided does not exist
                     public FileNotFoundException toThrow = new FileNotFoundException("The program was unable to find any file meeting your requirements to rename. Have you chosen the right file extension?");
-                    return toThrow; }
-                return true;
+                    return toThrow; } else {
+                        return true;
+                    }
             }
         }
 
-        public static ArrayList indexFolder(string path, bool testUse = false) {
+         static ArrayList indexFolder(string path, bool testUse = false) {
             ArrayList index = new ArrayList();
 
             foreach (string file in Directory.GetFiles(path)) {
